@@ -1,0 +1,20 @@
+# Codeception Test Suite Configuration
+#
+# Suite for unit or integration tests.
+
+actor: UnitTester
+bootstrap: '../../vendor/autoload.php'
+modules:
+    enabled:
+        - Asserts
+        - \Helper\Unit
+    step_decorators: ~
+coverage:
+    enabled: true
+    low_limit: 30
+    high_limit: 60
+    include:
+        - app/*
+    exclude:
+        - app/runtime/*
+    show_uncovered: false

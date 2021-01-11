@@ -1,0 +1,25 @@
+{
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0"
+    },
+    "require": {
+        "php": "^7.4",
+        "symfony/console": "^5.2",
+        "prooph/service-bus": "^6.2",
+        "prooph/event-sourcing": "^5.6",
+        "prooph/event-store": "^7.6",
+        "prooph/pdo-event-store": "^1.12",
+        "prooph/event-store-bus-bridge": "^3.3",
+        "prooph/snapshotter": "^2.1",
+        "prooph/pdo-snapshot-store": "^1.5",
+        "ext-pdo": "*"
+    }
+}
